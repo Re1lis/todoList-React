@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  background: gray;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white !important;
+  letter-spacing: 2px !important;
+  font-family: "Alumni Sans", sans-serif !important;
+  list-style-type: none !important;
+}
+
+.container{
+  text-align: center;
+
+
+
+  .input-todo{
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid black !important;
+    margin-right: 20px;
+    outline: none !important;
+    color: white;
+    font-family: "Alumni Sans", sans-serif;
+    font-size:  17px;
+    
+
+    &::placeholder{
+      color: white;
+      font-family: "Alumni Sans", sans-serif;
+      font-size:  17px;
+    }
+  }
+
+  .button-add{
+    letter-spacing: 1px !important;
+    width: 100px;
+    padding: 7px;
+    height: 40px;
+    border: 1px dashed black;
+    background: darkgray;
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+}
+
+.container-item-list{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  list-style-type: none !important;
+  width: 80%;
+  background: rgb(46, 71, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white;
+  font-size: 17px;
+  margin-bottom: 20px;
+  
+
+
+  .text-todo{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px ;
+  }
+
+  .delete-button-item-list-todo{
+    font-size: 15px;
+    padding: 5px;
+    letter-spacing: 1px !important;
+    border: 1px dashed black;
+    background: darkgray;
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.1s;
+
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+}
+
+.list-todo{
+  list-style-type: none !important;
+}
+
+.container-parent-item{
+  display: flex;
+  align-items: center;
+
+  .delete-button-item-list-todo{
+    height: 40px;
+    border-radius: 20px 0;
+    border: 1px solid black;
+    background: rgb(255, 202, 248);
+
+
+  }
+}
